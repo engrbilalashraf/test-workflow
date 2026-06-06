@@ -1,0 +1,14 @@
+name: test workflow lab
+
+on: 
+  push:
+      branches: 
+        - main
+
+jobs:
+  my-test-workflow-job:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: greeting
+      run: echo "Hello from github workfolw"
